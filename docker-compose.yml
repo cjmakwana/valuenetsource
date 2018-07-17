@@ -1,0 +1,11 @@
+version: '3'
+services:
+  turtleattack:
+    image: turtleattack:1.0.0
+    build:
+      context: ./TurtleAttack
+      dockerfile: ./Dockerfile
+networks:
+  default:
+    external:
+      name: nat

@@ -2,7 +2,20 @@ node {
 	stage 'Checkout'
 		checkout scm
 
+	stage 'Clean'
+		bat 'dotnet clean TurtleAttack.sln'
+		
+	stage 'Restore'
+		bat 'dotnet restore TurtleAttack.sln'
+		
 	stage 'Build'
-		bat 'nuget restore TurtleAttack.sln'
-		bat "\"${tool 'MSBuild'}\" TurtleAttack.sln /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+		bat 'dotnet publish TurtleAttack.sln --self-contained --runtime "ubuntu.14.04-x64" -c Release -o .\published'
+		
+	stage 'Containerize'
+		bat 'docker-compose build --force-rm --no-cache'
+		
+	stage 'PushImages'
+		bat 'docker login --username cjmakwana --password Sparcnet@78H'
+		bat 'docker tag turtleattack:1.0.0 valuenethub/turtleattack:1.0.0'
+		bat 'docker push valuenethub/turtleattack:1.0.0'
 }
