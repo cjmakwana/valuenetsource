@@ -13,7 +13,7 @@ namespace TurtleAttack.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Value 1", "Value 2" };
         }
 
         // GET api/values/5
