@@ -16,6 +16,6 @@ node {
 		
 	stage 'PushImages'
 		bat 'docker login --username cjmakwana --password Sparcnet@78H'
-		bat 'docker tag turtleattack:1.0.0 cjmakwana/valuenethub/turtleattack:1.0.0'
-		bat 'docker push cjmakwana/valuenethub/turtleattack:1.0.0'
+		bat 'docker tag turtleattack:1.0.0 cjmakwana/turtleattack:1.0.0'
+		bat 'docker push cjmakwana/turtleattack:1.0.0'
 }
