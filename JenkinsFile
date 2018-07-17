@@ -15,6 +15,10 @@ node {
 		bat 'docker-compose build --force-rm --no-cache'
 		
 	stage 'PushImages'
-		bat 'powershell -ExecutionPolicy ByPass -File "./PushImages.ps1"'
-		bat 'powershell "./PushImages.ps1"'
+	{
+		node ('ExecutePowershell')
+		{
+			PowerShell(". './PushImages.ps1'")
+		}
+	}
 }
