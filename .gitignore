@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/TurtleAttack/bin/Release/netcoreapp2.0
+/TurtleAttack/obj/Release/netcoreapp2.0
+/TurtleAttack/published
+/TurtleAttack/obj/netcoreapp2.0/ubuntu.14.04-x64/host

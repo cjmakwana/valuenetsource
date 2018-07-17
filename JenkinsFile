@@ -9,7 +9,7 @@ node {
 		bat 'dotnet restore TurtleAttack.sln'
 		
 	stage 'Build'
-		bat 'dotnet publish TurtleAttack.sln --self-contained --runtime "ubuntu.14.04-x64" -c Release -o .\published'
+		bat 'dotnet publish TurtleAttack.sln --self-contained --runtime "ubuntu.14.04-x64" -c Release -o ".\published"'
 		
 	stage 'Containerize'
 		bat 'docker-compose build --force-rm --no-cache'
