@@ -14,7 +14,7 @@ node {
 	stage 'Containerize'
 		bat 'docker-compose build --force-rm --no-cache'
 		
-	stage 'PushImages'
+	stage ('PushImages')
 	{
 		node ('ExecutePowershell')
 		{
