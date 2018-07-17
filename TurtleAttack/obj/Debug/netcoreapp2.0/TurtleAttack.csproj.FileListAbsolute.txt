@@ -1,0 +1,11 @@
+D:\Harman\DevOpsDemo\Source\TurtleAttack\bin\Debug\netcoreapp2.0\TurtleAttack.deps.json
+D:\Harman\DevOpsDemo\Source\TurtleAttack\bin\Debug\netcoreapp2.0\TurtleAttack.runtimeconfig.json
+D:\Harman\DevOpsDemo\Source\TurtleAttack\bin\Debug\netcoreapp2.0\TurtleAttack.runtimeconfig.dev.json
+D:\Harman\DevOpsDemo\Source\TurtleAttack\bin\Debug\netcoreapp2.0\TurtleAttack.dll
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.csprojResolveAssemblyReference.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.csproj.CoreCompileInputs.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.AssemblyInfoInputs.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.AssemblyInfo.cs
+D:\Harman\DevOpsDemo\Source\TurtleAttack\bin\Debug\netcoreapp2.0\TurtleAttack.pdb
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.dll
+D:\Harman\DevOpsDemo\Source\TurtleAttack\obj\Debug\netcoreapp2.0\TurtleAttack.pdb
