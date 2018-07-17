@@ -1,4 +1,3 @@
-﻿param([String] $Repo, [String] $UserId, [String] $Password, [String] $Version)
-docker login $Repo --username $UserId --password $Password
-docker tag valuenethub:$Version $Repo/valuenethub:$Version
-docker push $Repo/valuenethub:$Version
+﻿docker login --username cjmakwana --password Sparcnet@78H
+docker tag turtleattack:1.0.0 cjmakwana/turtleattack:1.0.0
+docker push cjmakwana/turtleattack:1.0.0
