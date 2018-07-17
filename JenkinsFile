@@ -14,11 +14,6 @@ node {
 	stage 'Containerize'
 		bat 'docker-compose build --force-rm --no-cache'
 		
-	stage ('PushImages')
-	{
-		node ('ExecutePowershell')
-		{
-			PowerShell(". './PushImages.ps1'")
-		}
-	}
+	stage 'PushImages'
+		bat 'powershell -ExecutionPolicy ByPass -File "./PushImages.ps1"'
 }
