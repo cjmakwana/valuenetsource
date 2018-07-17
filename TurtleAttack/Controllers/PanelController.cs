@@ -11,5 +11,11 @@ namespace TurtleAttack.Controllers
     [Route("api/Panel")]
     public class PanelController : Controller
     {
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "Panel 1", "Panel 2" };
+        }
+
     }
 }
