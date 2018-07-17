@@ -17,5 +17,10 @@ namespace TurtleAttack.Controllers
             return new string[] { "Panel 1", "Panel 2" };
         }
 
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return $"value {id}";
+        }
     }
 }
