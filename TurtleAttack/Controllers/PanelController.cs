@@ -14,7 +14,12 @@ namespace TurtleAttack.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Panel 1", "Panel 2" };
+            var list = new List<string>();
+            for(int i = 0; i < 10; ++i)
+            {
+                list.Add(Guid.NewGuid().ToString("N"));
+            }
+            return list;
         }
 
         [HttpGet("{id}")]
