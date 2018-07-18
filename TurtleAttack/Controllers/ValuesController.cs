@@ -34,6 +34,7 @@ namespace TurtleAttack.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
+            Console.WriteLine(value);
         }
 
         // DELETE api/values/5
