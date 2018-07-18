@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TurtleAttack.Domain.Entities
 {
@@ -10,5 +11,6 @@ namespace TurtleAttack.Domain.Entities
         public bool IsSurveillanceSupported { get; set; }
         public long StorageCapacity { get; set; }
         public ProcessorType Processor { get; set; }
+        public IEnumerable<SensorDevice> Sensors { get; set; }
     }
 }

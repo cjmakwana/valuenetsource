@@ -39,6 +39,8 @@ namespace TurtleAttack.Domain.Services
 
         public bool Add(Panel panel)
         {
+            if (!PanelValidationService.Instance.IsValidPanel(panel))
+                return false;
             _storedPanels.Add(panel);
             return true;
         }
@@ -56,6 +58,8 @@ namespace TurtleAttack.Domain.Services
 
         public bool Update(Panel panel)
         {
+            if (!PanelValidationService.Instance.IsValidPanel(panel))
+                return false;
             return Remove(panel.MacId) && Add(panel);
         }
     }
