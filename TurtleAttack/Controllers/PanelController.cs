@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TurtleAttack.Domain.Entities;
+using TurtleAttack.Domain.Services;
 
 namespace TurtleAttack.Controllers
 {
@@ -12,20 +14,33 @@ namespace TurtleAttack.Controllers
     public class PanelController : Controller
     {
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Panel> Get()
         {
-            var list = new List<string>();
-            for(int i = 0; i < 10; ++i)
-            {
-                list.Add(Guid.NewGuid().ToString("N"));
-            }
-            return list;
+            return PanelService.Instance.GetAll();
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Panel Get(string id)
         {
-            return $"value {id}";
+            return PanelService.Instance.Get(id);
+        }
+
+        [HttpPost]
+        public void Post([FromBody]Panel value)
+        {
+            PanelService.Instance.Add(value);
+        }
+
+        [HttpPut("{id}")]
+        public void Put(string id, [FromBody]Panel value)
+        {
+            PanelService.Instance.Update(value);
+        }
+
+        [HttpDelete("{id}")]
+        public void Delete(string id)
+        {
+            PanelService.Instance.Remove(id);
         }
     }
 }

@@ -1,7 +1,7 @@
 version: '3'
 services:
   turtleattack:
-    image: turtleattack:1.0.0
+    image: turtleattack:1.0.1
     build:
       context: ./TurtleAttack
       dockerfile: ./Dockerfile

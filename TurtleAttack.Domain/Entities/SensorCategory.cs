@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TurtleAttack.Domain
+namespace TurtleAttack.Domain.Entities
 {
     public enum SensorCategory
     {
@@ -11,6 +11,7 @@ namespace TurtleAttack.Domain
         GlassBreak,
         Smoke,
         Fire,
-        LPG
+        GasLeak,
+        Intrusion
     }
 }
