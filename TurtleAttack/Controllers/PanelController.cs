@@ -37,10 +37,10 @@ namespace TurtleAttack.Controllers
             PanelService.Instance.Update(value);
         }
 
-        [HttpDelete("{id}")]
-        public void Delete(string id)
-        {
-            PanelService.Instance.Remove(id);
-        }
+        //[HttpDelete("{id}")]
+        //public void Delete(string id)
+        //{
+        //    PanelService.Instance.Remove(id);
+        //}
     }
 }
