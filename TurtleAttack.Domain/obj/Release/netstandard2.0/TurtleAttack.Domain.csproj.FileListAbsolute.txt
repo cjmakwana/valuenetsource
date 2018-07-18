@@ -1,0 +1,9 @@
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\bin\Release\netstandard2.0\TurtleAttack.Domain.deps.json
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\bin\Release\netstandard2.0\TurtleAttack.Domain.dll
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\bin\Release\netstandard2.0\TurtleAttack.Domain.pdb
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.csprojResolveAssemblyReference.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.csproj.CoreCompileInputs.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.AssemblyInfoInputs.cache
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.AssemblyInfo.cs
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.dll
+D:\Harman\DevOpsDemo\Source\TurtleAttack.Domain\obj\Release\netstandard2.0\TurtleAttack.Domain.pdb

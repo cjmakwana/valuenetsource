@@ -2882,6 +2882,9 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
+      "psake/4.7.0": {
+        "type": "package"
+      },
       "Remotion.Linq/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -8017,6 +8020,70 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "psake/4.7.0": {
+      "sha512": "bMyMt9U4k9hW48Y+uY4k7u0gjLEKHXkPk4yxs6C1dvej+KRMmWAOOViL58NDDvV7MH+xWhZhx3WZEK+A0xX0RQ==",
+      "type": "package",
+      "path": "psake/4.7.0",
+      "files": [
+        "psake.4.7.0.nupkg.sha512",
+        "psake.nuspec",
+        "tools/README.md",
+        "tools/chocolateyInstall.ps1",
+        "tools/chocolateyUninstall.ps1",
+        "tools/init.ps1",
+        "tools/license.txt",
+        "tools/psake/en-US/psake.psm1-help.xml.old",
+        "tools/psake/examples/checkvariables.ps1",
+        "tools/psake/examples/continueonerror.ps1",
+        "tools/psake/examples/default.ps1",
+        "tools/psake/examples/formattaskname_scriptblock.ps1",
+        "tools/psake/examples/formattaskname_string.ps1",
+        "tools/psake/examples/msbuild40.ps1",
+        "tools/psake/examples/nested.ps1",
+        "tools/psake/examples/nested/nested1.ps1",
+        "tools/psake/examples/nested/nested2.ps1",
+        "tools/psake/examples/paralleltasks.ps1",
+        "tools/psake/examples/parameters.ps1",
+        "tools/psake/examples/passingParametersString/build.Release.Version.bat",
+        "tools/psake/examples/passingParametersString/parameters.ps1",
+        "tools/psake/examples/preandpostaction.ps1",
+        "tools/psake/examples/preandpostcondition.ps1",
+        "tools/psake/examples/properties.ps1",
+        "tools/psake/examples/requiredvariables.ps1",
+        "tools/psake/examples/tasksetupandteardown.ps1",
+        "tools/psake/private/CleanupEnvironment.ps1",
+        "tools/psake/private/ConfigureBuildEnvironment.ps1",
+        "tools/psake/private/CreateConfigurationForNewContext.ps1",
+        "tools/psake/private/ExecuteInBuildFileScope.ps1",
+        "tools/psake/private/Get-DefaultBuildFile.ps1",
+        "tools/psake/private/GetCurrentConfigurationOrDefault.ps1",
+        "tools/psake/private/GetTasksFromContext.ps1",
+        "tools/psake/private/LoadConfiguration.ps1",
+        "tools/psake/private/LoadModules.ps1",
+        "tools/psake/private/ResolveError.ps1",
+        "tools/psake/private/SelectObjectWithDefault.ps1",
+        "tools/psake/private/WriteColoredOutput.ps1",
+        "tools/psake/private/WriteDocumentation.ps1",
+        "tools/psake/private/WriteTaskTimeSummary.ps1",
+        "tools/psake/psake-config.ps1",
+        "tools/psake/psake.cmd",
+        "tools/psake/psake.ps1",
+        "tools/psake/psake.psd1",
+        "tools/psake/psake.psm1",
+        "tools/psake/public/Assert.ps1",
+        "tools/psake/public/Exec.ps1",
+        "tools/psake/public/FormatTaskName.ps1",
+        "tools/psake/public/Framework.ps1",
+        "tools/psake/public/Get-PSakeScriptTasks.ps1",
+        "tools/psake/public/Include.ps1",
+        "tools/psake/public/Invoke-Task.ps1",
+        "tools/psake/public/Invoke-psake.ps1",
+        "tools/psake/public/Properties.ps1",
+        "tools/psake/public/Task.ps1",
+        "tools/psake/public/TaskSetup.ps1",
+        "tools/psake/public/TaskTearDown.ps1"
+      ]
+    },
     "Remotion.Linq/2.1.1": {
       "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
@@ -13121,7 +13188,8 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.7",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
+      "psake >= 4.7.0"
     ]
   },
   "packageFolders": {
@@ -13179,6 +13247,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "psake": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           }
         },
         "imports": [
